@@ -2,6 +2,8 @@
     import { scale } from 'svelte/transition';
 
     export let user = {
+        username: 'MExample',
+        tag: 1234,
         bannerColor: '#063DF1',
         profilePictureUrl: 'https://cdn.discordapp.com/avatars/282861813215789058/5d1277d788ff2ed8f86315b39e1705b7.png?size=256',
     }
@@ -22,6 +24,7 @@
             <!-- svelte-ignore a11y-img-redundant-alt -->
             <img src={user.profilePictureUrl} alt="profile picture">
         </div>
+        <h2 id="username">{user.username}<span>#{user.tag}</span></h2>
     </header>
 </div>
 
@@ -47,6 +50,10 @@
         z-index:   2137;
     }
 
+    header {
+        height: 235px;
+    }
+
     .banner {
         width: 100%;
         height: 120px;
@@ -70,5 +77,20 @@
         height: 135px;
         border-radius: 2137px;
         padding: 8px;
+    }
+
+    #username {
+        margin-left: 15px;
+        position: relative;
+        top: calc((-135px / 2) - 15px);
+        font-family: "ABC Ginto Normal";
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        letter-spacing: -0.025em;
+    }
+
+    #username span {
+        color: #b9bbbe;
     }
 </style>
