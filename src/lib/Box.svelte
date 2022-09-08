@@ -51,7 +51,8 @@
     }
 
     header {
-        height: 235px;
+        height: 240px;
+        border-bottom: 1px solid #32353b;
     }
 
     .banner {
