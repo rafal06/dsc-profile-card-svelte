@@ -42,7 +42,7 @@
         top: 0;
         width: 100vw;
         height: 100vh;
-        background-color: #00000061;
-        /* transition: 1000ms; */
+        opacity: 0.85;
+        background: hsl(0, calc(1 * 0%), 0%);
     }
 </style>
