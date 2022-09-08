@@ -10,8 +10,8 @@
 </script>
 
 <main>
-	<div class="card-container">
-		{#if boxShown}
+    <div class="card-container">
+        {#if boxShown}
             <div
                 class="box"
                 on:click={toggleBox}
@@ -20,9 +20,9 @@
             >
             </div>
             <Box/>
-		{/if}
+        {/if}
         <button on:click={toggleBox}>Show</button>
-	</div>
+    </div>
 </main>
 
 <style>
