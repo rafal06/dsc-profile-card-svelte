@@ -39,6 +39,7 @@
 
     .card {
         background-color: var(--background-color);
+        border-radius:    8px;
 
         position:  absolute;
         top:       50vh;
